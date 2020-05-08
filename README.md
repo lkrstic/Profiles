@@ -12,7 +12,6 @@ CREATE TABLE users (
     name VARCHAR(128),
     email VARCHAR(128),
     pass VARCHAR(128),
-    
     INDEX(name),
     INDEX(pass)
 ) ENGINE = InnoDB DEFAULT CHARSET=utf8;
@@ -26,7 +25,6 @@ CREATE TABLE profiles (
     email TEXT,
     headline TEXT,
     summary TEXT,
-    
     PRIMARY KEY(profile_id),
     CONSTRAINT profile_ibfk_2
     	FOREIGN KEY (user_id)
